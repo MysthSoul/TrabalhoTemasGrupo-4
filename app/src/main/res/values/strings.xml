@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FilmesApp</string>
+
+    <string name="sobre">Sobre</string>
+    <string name="sobre_grupo">Trabalho do %1$s</string>
+
+    <string name="partilhar">Partilhar</string>
+    <string name="partilhar_via">Partilhar via</string>
+    <string name="partilhar_texto">Vê este filme: %1$s (%2$d)</string>
+    <string name="editar">Editar</string>
+    <string name="escolher_imagem">Escolher Imagem</string>
+    <string name="gravar">Gravar</string>
+
+    <string name="hint_titulo">Título</string>
+    <string name="titulo_obrigatorio">O título é obrigatório</string>
+    <string name="titulo_atualizado">Título atualizado: %1$s</string>
+    <string name="filme_nao_encontrado">Filme não encontrado</string>
+    <string name="nota_valor">Nota: %1$.1f</string>
+    <string name="cd_capa">Capa do filme</string>
+</resources>

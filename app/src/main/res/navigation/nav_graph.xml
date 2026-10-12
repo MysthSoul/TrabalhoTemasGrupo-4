@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaFragment">
+
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="com.exemplo.filmes.ListaFragment"
+        android:label="Lista">
+        <action
+            android:id="@+id/action_lista_to_detalhe"
+            app:destination="@id/detalheFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="com.exemplo.filmes.DetalheFragment"
+        android:label="Detalhe">
+        <argument
+            android:name="filmeId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detalhe_to_edicao"
+            app:destination="@id/edicaoFragment" />
+        <deepLink
+            android:id="@+id/deepLinkDetalhe"
+            app:uri="app://filmes/{filmeId}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/edicaoFragment"
+        android:name="com.exemplo.filmes.EdicaoFragment"
+        android:label="Edição">
+        <argument
+            android:name="filmeId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
